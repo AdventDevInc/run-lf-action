@@ -1,5 +1,7 @@
 name: 'LoadForge Start Run'
 description: 'Triggers a LoadForge run of a load test from GitHub Actions.'
+icon: 'activity'
+color: 'purple'
 inputs:
   api-token:
     description: 'Your LoadForge API Token'
