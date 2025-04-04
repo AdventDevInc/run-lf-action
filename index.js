@@ -31,9 +31,9 @@ async function run() {
         }
         
         core.info(`Test triggered successfully: ${JSON.stringify(data)}`);
-        core.info(`Monitor your test run at: https://app.loadforge.com/run/monitor/${data.run_id}`);
-        core.setOutput('run_id', data.run_id);
-        core.setOutput('monitor_url', `https://app.loadforge.com/run/monitor/${data.run_id}`);
+        core.info(`Monitor your test run at: https://app.loadforge.com/run/monitor/${data.result_id}`);
+        core.setOutput('run_id', data.result_id);
+        core.setOutput('monitor_url', `https://app.loadforge.com/run/monitor/${data.result_id}`);
     } catch (error) {
         core.setFailed(error.message);
     }
