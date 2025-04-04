@@ -1,0 +1,16 @@
+name: 'LoadForge Start Run'
+description: 'Triggers a LoadForge run of a load test from GitHub Actions.'
+inputs:
+  api-token:
+    description: 'Your LoadForge API Token'
+    required: true
+  test-id:
+    description: 'The ID of the LoadForge test to trigger'
+    required: true
+  duration:
+    description: 'Duration of the test run in minutes (2-720)'
+    required: false
+    default: '5'
+runs:
+  using: 'node22'
+  main: 'index.js'
