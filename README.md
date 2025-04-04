@@ -51,7 +51,7 @@ jobs:
       
       - name: Run LoadForge Test
         id: loadforge
-        uses: your-org/run-lf-action@v1
+        uses: AdventDevInc/run-lf-action@v1
         with:
           api-token: ${{ secrets.LOADFORGE_API_TOKEN }}
           test-id: 123
