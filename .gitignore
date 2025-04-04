@@ -1,1 +1,23 @@
+# Dependency directories
 node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+.npm
+
+# dotenv environment variable files
+.env
+.env.local
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# DO NOT ignore dist directory as it contains the bundled action
+# dist/

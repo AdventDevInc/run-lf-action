@@ -63,6 +63,17 @@ jobs:
           echo "Monitor your test run at: ${{ steps.loadforge.outputs.monitor_url }}"
 ```
 
+## Development
+
+This action uses [@vercel/ncc](https://github.com/vercel/ncc) to compile the Node.js code and its dependencies into a single file. This allows the action to run without needing to install dependencies at runtime.
+
+To make changes to the action:
+
+1. Modify the code in `index.js`
+2. Install dependencies: `npm install`
+3. Build the action: `npx @vercel/ncc build index.js --license licenses.txt`
+4. Commit and push your changes, including the `dist` directory
+
 ## License
 
 MIT
