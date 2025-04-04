@@ -1,12 +1,12 @@
 # LoadForge Start Run GitHub Action
 
-This GitHub Action allows you to trigger LoadForge load tests directly from your GitHub Actions workflow.
+This GitHub Action allows you to trigger [LoadForge](https://loadforge.com) load tests directly from your GitHub Actions workflow.
 
 ## Usage
 
 ```yaml
 - name: Run LoadForge Test
-  uses: your-org/run-lf-action@v1
+  uses: AdventDevInc/run-lf-action@v1
   with:
     api-token: ${{ secrets.LOADFORGE_API_TOKEN }}
     test-id: 123
